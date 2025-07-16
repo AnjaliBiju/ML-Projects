@@ -21,11 +21,11 @@ The dataset includes features like:
 
 ## 🧪 Features Extracted
 
-From the `Timestamp` column, we extracted:
+From the `Timestamp` column, extracted:
 - `Hour` of the day
 - `Month` of the year
 
-We dropped irrelevant columns like `Ad Topic Line`, `City`, `Country`, and `Timestamp` to improve model performance.
+Dropped irrelevant columns like `Ad Topic Line`, `City`, `Country`, and `Timestamp` to improve model performance.
 
 ---
 
