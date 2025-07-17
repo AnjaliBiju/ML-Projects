@@ -42,3 +42,30 @@ Predict whether **corrective spine surgery** was successful using **Decision Tre
 
 ### 🧰 Tech Stack
 `Python`, `pandas`, `numpy`, `scikit-learn`, `matplotlib`
+
+## 3. Loan Repayment Prediction
+
+This project predicts whether a borrower will fully repay their loan using historical **LendingClub** data (2007–2010). The goal is to assist investors in assessing credit risk before lending.
+
+### 📊 Dataset
+- **Source:** LendingClub.com (2007–2010)
+- **Target:** `not.fully.paid` (1 = Defaulted, 0 = Fully Paid)
+- **Features:** Credit policy, FICO score, interest rate, purpose, and other borrower details.
+
+### 🛠 Approach
+- Performed **data preprocessing** and handled categorical variables using one-hot encoding.
+- Implemented:
+  * **Decision Tree Classifier**
+  * **Random Forest Classifier**
+- Evaluated with confusion matrix and classification metrics.
+
+### ✅ Results & Insights
+* **Decision Tree:** Accuracy ~73%, better on majority class, low recall for defaults.
+* **Random Forest:** Accuracy ~85%, strong on fully paid loans, but weak on minority class (defaults).
+* **Key Challenge:** Class imbalance → models favor majority class.
+* Suggested improvements: **SMOTE, class weights, advanced ensembles**.
+
+### 🧰 Tech Stack
+`Python` | `pandas` | `numpy` | `matplotlib` | `seaborn` | `scikit-learn`
+
+
