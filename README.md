@@ -1,59 +1,44 @@
-# ML-Projects
-# 🧠 Predicting Advertisement Clicks using User Behavior Data
+# ML Projects
 
-This project aims to predict whether a user will click on an online advertisement based on their behavior and demographic data. We use **Logistic Regression**, a powerful and interpretable classification algorithm, to perform binary prediction (click or no click).
-
----
-
-## 📊 Dataset
-
-The dataset includes features like:
-
-- Daily Time Spent on Site
-- Age
-- Area Income
-- Daily Internet Usage
-- Gender (Male/Female)
-- Timestamp of Ad Display
-- Ad Click (Target: 1 = Clicked, 0 = Not Clicked)
+This repository contains multiple Machine Learning projects demonstrating the application of various algorithms on real-world datasets.
 
 ---
 
-## 🧪 Features Extracted
+## 1. Predicting Advertisement Clicks using User Behavior Data
 
-From the `Timestamp` column, extracted:
-- `Hour` of the day
-- `Month` of the year
+This project focuses on **predicting user ad-click behavior** based on demographic and usage data using **Logistic Regression**, a widely used classification algorithm.
 
-Dropped irrelevant columns like `Ad Topic Line`, `City`, `Country`, and `Timestamp` to improve model performance.
+### 📊 Dataset Highlights
+- Features: `Daily Time Spent on Site`, `Age`, `Area Income`, `Daily Internet Usage`, `Gender`
+- Target: `Ad Click` (1 = Clicked, 0 = Not Clicked)
 
----
+### 🛠 Approach
+- Performed **feature engineering** by extracting time-based attributes and removing irrelevant fields
+- Applied **data preprocessing and encoding** for model readiness
+- Implemented **Logistic Regression** using scikit-learn
 
-## ✅ Model Used
+### ✅ Results
+- **Accuracy:** ~98%
+- **Precision, Recall, F1:** ~0.98
+- **Confusion Matrix:** Minimal false positives/negatives
 
-- **Logistic Regression** (from `scikit-learn`)
-- Trained on preprocessed and encoded data
-- Achieved **~98% accuracy** on test data
-
----
-
-## 📈 Evaluation
-
-- **Accuracy**: 98%
-- **Precision / Recall / F1**: All ~0.98 for both classes
-- **Confusion Matrix**: Minimal false positives and negatives
+### 🧰 Tech Stack
+`Python` | `pandas` | `numpy` | `matplotlib` | `seaborn` | `scikit-learn`
 
 ---
+## 2. Kyphosis Surgery Outcome Prediction
+Predict whether **corrective spine surgery** was successful using **Decision Trees** and **Random Forests**.
 
-## 📦 Dependencies
+### 📊 Dataset
+- Target: `Kyphosis` (Present / Absent)
+- Features: Age, Number of Vertebrae, Start Position
 
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
+### ✅ Key Steps
+- Implemented **Decision Tree** and **Random Forest Classifier**
+- Evaluated using confusion matrix and classification metrics
 
-Install using:
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
+### 📈 Results
+- Random Forest provided higher accuracy and reduced overfitting compared to a single tree
+
+### 🧰 Tech Stack
+`Python`, `pandas`, `numpy`, `scikit-learn`, `matplotlib`
